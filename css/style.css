@@ -6,6 +6,9 @@
   list-style: none;
   text-decoration: none;
 }
+:root{
+  --clr #222327
+}
 header{
   position: fixed;
   right: 0;
@@ -19,7 +22,67 @@ header{
   background: transparent;
 }
 body{
-  background: red;
+  background: var(--clr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.navigation{
+  width: 250px;
+  height: 50px;
+  background: #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.navigation ul{
+  display: flex;
+  width: 350px;
+}
+.navigation ul li{
+  position: relative;
+  list-style: none;
+  width: 70px;
+  z-index: 1;
+}
+.navigation ul li a{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center
+  font-weight: 500;
+}
+.navigation ul li a .icon{
+  position: relative;
+  display: block;
+  line-height: 75px;
+  font-size: 1.5em;
+  text-align: center;
+  transition: 0.5s;
+  color: var(--clr);
+}
+.navigation ul li.active a.icon{
+  transform: translateY(-35px);
+}
+.navigation ul li a .text {
+  position: absolute;
+  color: var(--clr);
+  font-weight: 400;
+  font-size: 0.75em;
+  letter-spacing: 0.05em
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.navigation ul li.active a.text{
+  opacity: 1;
+  transform: translateY(10px);
 }
 .logo{
   font-size: 30px;
@@ -127,7 +190,7 @@ section{
   position: absolute;
   top: 50%;
   padding: 0 9%;
-  transform: translatey(-50%);
+  transform: translateY(-50%);
 }
 .icons i{
   display: block;
@@ -138,7 +201,7 @@ section{
 }
 .icons i:hover{
   color: white;
-  transform: translatey(-5px);
+  transform: translateY(-5px);
 }
 .scroll-down{
   position: absolute;
@@ -155,13 +218,24 @@ section{
   transition: all .50s ease;
 }
 .scroll-down i:hover{
-  transform: translatey(-5px);
+  transform: translateY(-5px);
 }
 
-@media (max-width: 153px){
+@media (max-width: 1530px){
   header{
     padding: 15px 3%;
     transition: .2s;
+  }
+  .navigation{
+  width: 250px;
+  height: 50px;
+  background: #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
   }
   .icons{
     padding: 0 3%;
@@ -249,4 +323,30 @@ section{
     width: 100%;
     height: auto;
   }
+  .navigation{
+  width: 150px;
+  height: 25px;
+  background: #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.navigation ul li{
+  position: relative;
+  list-style: none;
+  width: 35px;
+  z-index: 1;
+}
+.navigation ul li a .icon{
+  position: relative;
+  display: block;
+  line-height: 55px;
+  font-size: 1.5em;
+  text-align: center;
+  transition: 0.5s;
+  color: black;
+}
+
 }
