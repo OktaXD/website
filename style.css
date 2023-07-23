@@ -117,7 +117,7 @@ body{
  margin-left: -10px;
  color: transparent;
  -webkit-text-stroke: 1px #fff; 
- background: url(image/back2.png);
+ background: url(img/back2.png);
  -webkit-background-clip: text;
  background-position: 0 0;
  animation: back 20s linear infinite;
@@ -249,7 +249,7 @@ body{
  margin-left: -8px;
  color: transparent;
  -webkit-text-stroke: 1px #fff; 
- background: url(image/back2.png);
+ background: url(img/back2.png);
  -webkit-background-clip: text;
  background-position: 0 0;
  animation: back .20s linear-infinite;
