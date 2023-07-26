@@ -1,0 +1,160 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', Sans-Serif;
+}
+.hero{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: black;
+}
+.logo{
+  width: 200px;
+  height: 100px;
+}
+nav{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+nav ul li a:hover{
+  color: crimson;
+}
+.text{
+  margin-left: 8%;
+  margin-top: 15%;
+  position: relative;
+}
+.text h1{
+  font-size: 50px;
+  color: white;
+  margin-bottom: 20px;
+}
+span{
+  position: absolute;
+  margin-top: 25px;
+  margin-left: 190px;
+  transform: translate(-50%,-50%);
+  font-size: 2em;
+}
+.text span:nth-child(1){
+  color: transparent;
+  -webkit-text-stroke: 1px white
+}
+.text span:nth-child(2){
+  color: crimson;
+  animation: animate 4s ease-in-out infinite;
+}
+@keyframes animate{
+  0%,100%{
+    clip-path: polygon(0 78%, 0 50%, 18% 59%, 35% 62%, 49% 56%, 69% 41%, 78% 36%, 89% 33%, 100% 36%, 100% 57%, 100% 77%, 100% 100%, 83% 100%, 32% 100%, 0 100%);
+  }
+  50%{
+    clip-path: polygon(0 78%, 0 37%, 16% 34%, 28% 37%, 40% 48%, 54% 58%, 73% 62%, 88% 55%, 100% 45%, 100% 74%, 100% 93%, 100% 100%, 83% 100%, 32% 100%, 0 100%);
+  }
+}
+.text p{
+  color: white;
+  line-height: 22px;
+}
+.text a{
+  background: white;
+  text-decoration: none;
+  padding: 10px 18px;
+  font-weight: bold;
+  color: black;
+  display: inline-block;
+  margin: 30px 0;
+  border-radius: 5px;
+}
+.images{
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  bottom: 0;
+  right: 100%;
+  margin-bottom: 1320px;
+  margin-right: 500px;
+}
+.images img{
+  height: 100%;
+  position: absolute;
+  margin-left: 1500px;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: bottom 1s, left;
+}
+.images .shape{
+  width: 350px;
+  height: 350px;
+}
+.images .anime{
+  width: 350px;
+  height: 350px;
+}
+.images:hover .shape{
+  bottom: 40px;
+}
+.images:hover .anime{
+  left: 45px;
+}
+.hero .tentang{
+  color: white;
+  line-height: 22px;
+}
+.hero .tentang h3{
+  margin-top: 50px;
+  margin-left: 60px;
+}
+.hero .tentang p{
+  margin-left: 60px;
+}
+
+.tentang .tomb a{
+  text-decoration: none;
+  color: white;
+  background-color: crimson;
+  padding: 10px 18px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 30px 0 0 48px;
+  border-radius: 30px;
+  letter-spacing: 2px;
+  transition: 0.2s;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+.tentang .tomb a:hover{
+  color: crimson;
+  background: red;
+  box-shadow: 0 0 10px red, 0 0 40px red, 0 0 80px red;
+}
+@media (max-width: 680px){
+.text p{
+  font-size: 20px;
+  color: black;
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', Sans-Serif;
+  background-color: white;
+}
+.tentang .tomb a{
+  color: white;
+}
+}
